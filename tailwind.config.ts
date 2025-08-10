@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Islamic design system colors
+				'islamic-green': 'hsl(var(--islamic-green))',
+				'islamic-green-light': 'hsl(var(--islamic-green-light))',
+				'islamic-gold': 'hsl(var(--islamic-gold))',
+				'islamic-gold-light': 'hsl(var(--islamic-gold-light))',
+				'cream': 'hsl(var(--cream))',
+				'cream-dark': 'hsl(var(--cream-dark))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +91,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'gentle-fade': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'peaceful-glow': {
+					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--islamic-green) / 0.1)' },
+					'50%': { boxShadow: '0 0 40px hsl(var(--islamic-green) / 0.2)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'gentle-fade': 'gentle-fade 0.6s ease-out',
+				'peaceful-glow': 'peaceful-glow 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-hero': 'var(--gradient-hero)'
 			}
 		}
 	},

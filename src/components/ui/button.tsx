@@ -18,6 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Islamic-inspired variants
+        hero: "bg-gradient-primary text-primary-foreground hover:shadow-warm transition-all duration-300 shadow-soft",
+        peaceful: "bg-islamic-green text-cream hover:bg-islamic-green-light transition-all duration-300",
+        wisdom: "bg-islamic-gold text-foreground hover:bg-islamic-gold-light transition-all duration-300",
+        gentle: "bg-cream border border-islamic-green/20 text-foreground hover:bg-cream-dark transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
